@@ -3,7 +3,7 @@ pipeline {
   
   environment {
         WORKSPACE = "${env.WORKSPACE}"
-        AWS_DEFAULT_REGION = "us-west-2"
+        AWS_DEFAULT_REGION = "us-east-1"
     }
 
   tools {
@@ -113,8 +113,8 @@ pipeline {
 
     stage('Build and Push Docker Image') {
       environment {
-        awsAccountId = '490417497435'
-        region = 'us-west-2'
+        awsAccountId = '389029577690'
+        region = 'us--1'
         repositoryName = 'jjtech-demo'
         dockerImageTag = "${BUILD_NUMBER}"
         ecrRegistry = "${awsAccountId}.dkr.ecr.${region}.amazonaws.com"

@@ -3,7 +3,7 @@ pipeline {
   
   environment {
         WORKSPACE = "${env.WORKSPACE}"
-        AWS_DEFAULT_REGION = "us-west-2"
+        AWS_DEFAULT_REGION = "us--1"
     }
 
   tools {
