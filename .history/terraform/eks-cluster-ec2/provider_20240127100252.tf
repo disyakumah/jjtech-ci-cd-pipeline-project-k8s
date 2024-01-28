@@ -3,7 +3,7 @@
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "surale"
+    bucket         = "k8s-project-bucket-2023"
     key            = "jjtech/terraform.tfstate"
     region         = "us-west-2"
 

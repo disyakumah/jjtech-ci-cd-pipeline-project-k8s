@@ -3,7 +3,7 @@
 terraform {
   backend "s3" {
     # Replace this with your bucket name!
-    bucket         = "surale"
+    bucket         = "3k8s-project-bucket-202"
     key            = "jjtech/terraform.tfstate"
     region         = "us-west-2"
 
@@ -14,7 +14,7 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "4.67.0"
+      version >= "4.67.0"
     }
   }
 }
